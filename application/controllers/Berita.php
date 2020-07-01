@@ -12,10 +12,10 @@ class Berita extends REST_Controller {
     $this->load->database();
   }
 
-  // method index untuk menampilkan semua data person menggunakan method get
+  // method index untuk menampilkan semua data berita menggunakan method get
   public function index_get(){
         $data = $this->db->get('berita')->result();
-        $this->response($data, 200);
+        $this->response(ResponseTemplate($data, 200, "Berhasil"), 200);
   }
 
 }
