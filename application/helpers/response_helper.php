@@ -13,3 +13,4 @@ function ResponseTemplate($data, $kode, $message){
     ];
 
 }
+
